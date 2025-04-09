@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Asyla</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="PortofolioStyle.css"/>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+
+    <style>
+        .content { display: none; }
+        .active { display: block; }
+        .custom-container {
+            background-color: rgb(237, 175, 199);
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div class="container mt-4">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="https://i.pinimg.com/736x/0f/f9/25/0ff925ed2065630e0957f666e8acd0c9.jpg" 
+                    alt="Logo" style="height: 50px;"> Asyla
+                </a>
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="showContent('Beranda')">Beranda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="showContent('Portofolio')">Portofolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="showContent('Prestasi')">Prestasi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="showContent('Contact')">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div style="height: 50px;"></div>
+
+        <!-- Beranda (bisa ditambahkan konten jika mau) -->
+        <div id="Beranda" class="content active">
+            <div class="container py-5">
+                <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="profile-card text-center">
+                    <img src="me3.jpg" alt="Foto Tanty" class="profile-image">
+                    <div class="profile-details">
+                        <h2 class="fw-bold">Tanty Nazala Asyla</h2>
+                        <p class="mb-1">Kelas: 4B Sistem Informasi</p>
+                        <p class="mb-1">NPM: 2310631250034</p>
+                        <hr>
+                        <p class="mb-1"><strong>Kontak:</strong> +62 852-1043-3673</p>
+                        <p class="mb-1"><strong>Email:</strong> tugasasyla@gmail.com</p>
+                        <div class="social-icons mt-3">
+                        <a href="https://instagram.com/asyla_n.t" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/+62 852-1043-3673" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Portofolio -->
+        <div id="Portofolio" class="content">
+            <h2>Galeri Project Saya</h2>
+            <p>Berikut adalah dokumentasi dari beberapa project yang telah saya buat
+            dari tugas di setiap pertemuan mata kuliah Pemrograman Berbasis Web.</p>
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="col">
+                    <div class="card">
+                        <img src="P4 (4).png" class="card-img-top" alt="Tugas4/1">
+                        <div class="card-body">
+                            <h5 class="card-title">Project Pertemuan 4</h5>
+                            <p class="card-text">Membuat website yang berisikan gambar beserta penjelasan nya.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="P4 (2).png" class="card-img-top" alt="Tugas4/2">
+                        <div class="card-body">
+                            <h5 class="card-title">Project Pertemuan 4</h5>
+                            <p class="card-text">Membuat website yang berisikan form contact me.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="P4 (1).png" class="card-img-top" alt="Tugas4/3">
+                        <div class="card-body">
+                            <h5 class="card-title">Project Pertemuan 4</h5>
+                            <p class="card-text">Membuat website yang berisikan gambar beserta penjelasan nya.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="P4 (3).png" class="card-img-top" alt="Tugas4/4">
+                        <div class="card-body">
+                            <h5 class="card-title">Project Pertemuan 3</h5>
+                            <p class="card-text">Membuat website yang berisikan beberapa gambar bebas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="height: 50px;"></div>
+        </div>
+
+
+        <!-- Prestasi -->
+        <div id="Prestasi" class="content">
+            <h2>Galeri Kegiatan Saya.</h2>
+            <p>Berikut adalah dokumentasi saya ketika mengikuti kegiatan kampus.</p>
+            
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="col">
+                    <div class="card">
+                        <img src="Edufair(1).jpg" class="card-img-top" alt="Edufair">
+                        <div class="card-body">
+                            <h5 class="card-title">Edufair 2023</h5>
+                            <p class="card-text">Dokumentasi saya saat mengikuti workshop PBB yang diselenggarakan oleh 
+                                edufair himsika.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="Compfair(1).jpg" class="card-img-top" alt="Compfair">
+                        <div class="card-body">
+                            <h5 class="card-title">Compfair X Diesnatalis Fasilkom 2024</h5>
+                            <p class="card-text">Dokumentasi saya ketika mengikuti kegiatan sebagai panitia acara
+                                compfair x diesnatalis fasilkom 2024.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="height: 50px;"></div>
+        </div>
+
+
+        <!-- Contact -->
+        <div id="Contact" class="content">
+            <h2>Kontak Saya.</h2>
+            <p>Jika anda membutuhkan bantuan, silahkan hubungi saya melalui formulir dibawah ini:</p>
+            <form>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter email">
+                </div>
+                <div class="form-group row">
+                    <div class="col">
+                        <label for="Nama-Depan">Nama Depan</label>
+                        <input type="text" class="form-control" id="Nama-Depan" placeholder="Masukkan Nama">
+                    </div>
+                    <div class="col">
+                        <label for="Nama-Belakang">Nama Belakang</label>
+                        <input type="text" class="form-control" id="Nama-Belakang" placeholder="Masukkan Nama">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="Pesan">Pesan</label>
+                    <textarea class="form-control" id="Pesan" rows="3"></textarea>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="terms">
+                    <label class="form-check-label" for="terms">Saya setuju dengan syarat dan ketentuan.</label>
+                </div>
+                <button type="submit" class="btn btn-primary mt-2">Kirim</button>
+            </form>
+        </div>
+
+    </div>
+
+    <script>
+        function showContent(contentId) {
+            var contents = document.querySelectorAll('.content');
+            contents.forEach(function(content) {
+                content.classList.remove('active');
+            });
+            document.getElementById(contentId).classList.add('active');
+        }
+    </script>
+
+</body>
+</html>
